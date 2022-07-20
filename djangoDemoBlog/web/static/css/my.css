@@ -1,5 +1,6 @@
 body {
-  background-image: url('blue-screen-of-death.jpg');
+  background-image: url('https://cdn.wallpaperjam.com/df1720c6e8013f3915b174f4eee0a062ef72ef62/blue-screen-of-death.jpg');
+  /*blue screen of death.jpg*/
   margin-top: 5rem;
 }
 
@@ -102,4 +103,8 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+#title404 {
+    color:white;
 }

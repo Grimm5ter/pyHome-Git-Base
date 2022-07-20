@@ -14,6 +14,8 @@ from django.views.generic import (
     DeleteView
 )
 
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
 
 class PostListView(ListView):
     model = Post
@@ -103,3 +105,4 @@ def add_comment(request, pk):
     else:
         return redirect('post_detail', pk=pk)
     return redirect('post_detail', pk=pk)
+

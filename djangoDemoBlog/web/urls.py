@@ -35,6 +35,8 @@ urlpatterns = [
         template_name='users/password_change_done.html'), name='password_change_done'),
 ]
 
+handler404 = "blog.views.page_not_found_view"
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
